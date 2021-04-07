@@ -1,20 +1,20 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Use the title from
-    a page's frontmatter if it has one -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Profile</title>
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto:400,700" rel="stylesheet">
-  <%= stylesheet_link_tag "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= favicon_tag 'images/mee.png' %>
-</head>
-<body>
-  <%= yield %>
-</body>
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto:400,700" rel="stylesheet">
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= favicon_tag 'images/mee.png' %>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <%= yield %>
+  </body>
 </html>

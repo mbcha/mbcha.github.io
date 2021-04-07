@@ -1,0 +1,20 @@
+gsap.set(".name", { autoAlpha: 0 });
+
+let tl = gsap.timeline({ defaults: { duration: 0.3, ease: Linear.easeNone } });
+tl.to('.name', { autoAlpha: 1 })
+  .fromTo('.name #mask-m', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-a', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-r', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-i', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-i-dot', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-a-2', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-b', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-e', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-l', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-e-2', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-e-2-dot', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-n', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-c', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-h', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-a-3', { drawSVG: '0% 0%' }, { drawSVG: true })
+  .fromTo('.name #mask-a-3-dot', { drawSVG: '0% 0%' }, { drawSVG: true })

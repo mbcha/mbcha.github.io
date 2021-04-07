@@ -61,6 +61,22 @@ a:hover {
     text-decoration: none;
   }
 }
-.email-link {
-
+.name-container {
+  width: 100vw;
+  height: 100px;
+}
+.name {
+  cursor: pointer;
+  fill: #d83e00;
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 200px;
+}
+.name {
+  .mask{
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+  }
 }

@@ -2,13 +2,5 @@ source 'https://rubygems.org'
 
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
-gem 'middleman-sprockets'
-gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
-gem 'pry-byebug', require: true
-
-# Assets
-gem 'font-awesome-sass'
-gem 'bootstrap-sass'
-gem 'jquery-middleman'
-
-gem "rack", ">= 2.0.6"
+gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
+gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]

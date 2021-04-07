@@ -1,68 +1,65 @@
-
+<div class="name-container">
+  <%= partial "svg/name" %>
+</div>
 
 <div class="wrapper">
-  <!-- <div class="card-grid"> -->
-    <div class="main-card main-card-left">
-      <div class="card card-info">
-        <h3 style="background-image: url('../images/yo.jpg');" class="avatar"/></h3>
-        <h1>BELLA CHA</h1>
-        <h3>Junior Web Developer</h3>
-        <p><%= link_to "Le Wagon","https://www.lewagon.com/", class: "lewagon-link", target: :blank %> Graduate</p>
-
-      </div>
+  <div class="main-card main-card-left">
+    <div class="card card-info">
+      
     </div>
+  </div>
 
-    <div class="main-card main-card-right">
-      <div class="card card-projects">
-        <h3>Projects</h3>
-        <div class="projects">
-          <% link_to "https://tool-bnb.herokuapp.com/", class: "project", target: :blank do %>
-          <i class="fas fa-wrench project-background"></i>
-          <div class="project-hover"></div>
-          <div class="project-info">
-            <h2>ToolBox</h2>
-            <div class="project-description">
+  <div class="main-card main-card-right">
+    <div class="card card-projects">
+      <h3>Projects</h3>
+      <div class="projects">
+        <% link_to "https://tool-bnb.herokuapp.com/", class: "project", target: :blank do %>
+        <i class="fas fa-wrench project-background"></i>
+        <div class="project-hover"></div>
+        <div class="project-info">
+          <h2>ToolBox</h2>
+          <div class="project-description">
 
-                <p>Ruby on Rails website to rent a tool.</p>
-                <p>One week project during Le Wagon Bootcamp.</p>
-                <p>Collaborated with three other developers on GitHub.</p>
+              <p>Ruby on Rails website to rent a tool.</p>
+              <p>One week project during Le Wagon Bootcamp.</p>
+              <p>Collaborated with three other developers on GitHub.</p>
 
-            </div>
           </div>
-          <% end %>
-          <!-- <a href="https://misses-cocktail.herokuapp.com/" class="project">CocktailBook</a> -->
-          <% link_to "http://www.shelfup.club/", class: "project", target: :blank do %>
-          <i class="fas fa-arrow-up project-icon project-background"></i>
-          <div class="project-hover"></div>
-          <div class="project-info">
-            <h2>ShelfUp</h2>
-            <div class="project-description">
-
-                <p>Ruby on Rails website to find a shelf to display products in a store.</p>
-                <p>Two weeks project during Le Wagon Bootcamp.</p>
-                <p>Collaborated with three other developers on GitHub.</p>
-
-            </div>
-          </div>
-          <% end %>
         </div>
-      </div>
+        <% end %>
+        <% link_to "http://www.shelfup.club/", class: "project", target: :blank do %>
+        <i class="fas fa-arrow-up project-icon project-background"></i>
+        <div class="project-hover"></div>
+        <div class="project-info">
+          <h2>ShelfUp</h2>
+          <div class="project-description">
 
-      <div class="card card-contact">
-        <!-- <h3>Contact Me</h3> -->
-        <% link_to("https://github.com/mbcha", class: "link", target: :blank) do %>
-        <i class="fab fa-github card-icon"></i>
-        <% end %>
-        <% link_to("https://www.linkedin.com/in/bella-cha-097385a0/", class: "link", target: :blank) do %>
-        <i class="fab fa-linkedin-in card-icon"></i>
-        <% end %>
-        <% link_to("mailto:EMAIL", class: "link", target: :blank) do %>
-        <i class="far fa-envelope card-icon email-link"></i>
-        <% end %>
-        <% link_to("CV-BellaCha.pdf", class: "link", target: :blank, title: "Download CV", download: "CV") do %>
-        <i class="far fa-file-pdf card-icon"></i>
+              <p>Ruby on Rails website to find a shelf to display products in a store.</p>
+              <p>Two weeks project during Le Wagon Bootcamp.</p>
+              <p>Collaborated with three other developers on GitHub.</p>
+
+          </div>
+        </div>
         <% end %>
       </div>
     </div>
-  <!-- </div> -->
+
+    <div class="card card-contact">
+      <!-- <h3>Contact Me</h3> -->
+      <% link_to("https://github.com/mbcha", class: "link", target: :blank) do %>
+      <i class="fab fa-github card-icon"></i>
+      <% end %>
+      <% link_to("https://www.linkedin.com/in/bella-cha-097385a0/", class: "link", target: :blank) do %>
+      <i class="fab fa-linkedin-in card-icon"></i>
+      <% end %>
+      <% link_to("mailto:EMAIL", class: "link", target: :blank) do %>
+      <i class="far fa-envelope card-icon email-link"></i>
+      <% end %>
+      <% link_to("CV-BellaCha.pdf", class: "link", target: :blank, title: "Download CV", download: "CV") do %>
+      <i class="far fa-file-pdf card-icon"></i>
+      <% end %>
+    </div>
+  </div>
 </div>
+
+<script src="javascripts/nameAnimation.js"></script>
