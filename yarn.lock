@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+"gsap@npm:@gsap/member@^3.11.5":
+  "integrity" "sha512-tsIqEQXB+KZWLz0XL+j5CXdJcfVqM/f6F/Ks8SS7nQJRtt00Od5LWvoHYHz3auF0fCp1UinzyTV6tUQlxDiqiw=="
+  "resolved" "https://npm.greensock.com/@gsap%2fmember/-/member-3.11.5.tgz"
+  "version" "3.11.5"
