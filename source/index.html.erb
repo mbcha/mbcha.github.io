@@ -1,65 +1,59 @@
-<div class="name-container">
-  <%= partial "svg/name" %>
-</div>
-
-<div class="wrapper">
-  <div class="main-card main-card-left">
-    <div class="card card-info">
-      
-    </div>
+<div class="main-container">
+  <div class="name-container">
+    <%= partial "svg/name" %>
   </div>
 
-  <div class="main-card main-card-right">
-    <div class="card card-projects">
-      <h3>Projects</h3>
-      <div class="projects">
-        <% link_to "https://tool-bnb.herokuapp.com/", class: "project", target: :blank do %>
-        <i class="fas fa-wrench project-background"></i>
-        <div class="project-hover"></div>
-        <div class="project-info">
-          <h2>ToolBox</h2>
-          <div class="project-description">
-
-              <p>Ruby on Rails website to rent a tool.</p>
-              <p>One week project during Le Wagon Bootcamp.</p>
-              <p>Collaborated with three other developers on GitHub.</p>
-
-          </div>
+  <div class="info-container">
+    <div class="inner-info-container left">
+      <div class="card card-profile">
+        <div class="image-wrapper">
+          <%= image_tag("yo.jpg") %>
         </div>
+        <h2>Full Stack Software Engineer</h2>
+        <p>
+          <b><%= Time.now.year - 2019 %>+</b> years of experience
+        <br>
+          Working mainly with <b>Ruby</b> and <b>JavaScript</b>
+        </p>
+      </div>
+
+      <div class="card card-contact">
+        <% link_to("https://github.com/mbcha", class: "contact-icon", target: :blank) do %>
+          <i class="fab fa-github card-icon"></i>
         <% end %>
-        <% link_to "http://www.shelfup.club/", class: "project", target: :blank do %>
-        <i class="fas fa-arrow-up project-icon project-background"></i>
-        <div class="project-hover"></div>
-        <div class="project-info">
-          <h2>ShelfUp</h2>
-          <div class="project-description">
-
-              <p>Ruby on Rails website to find a shelf to display products in a store.</p>
-              <p>Two weeks project during Le Wagon Bootcamp.</p>
-              <p>Collaborated with three other developers on GitHub.</p>
-
-          </div>
-        </div>
+        <% link_to("https://www.linkedin.com/in/mbcha/", class: "contact-icon", target: :blank) do %>
+          <i class="fab fa-linkedin-in card-icon"></i>
+        <% end %>
+        <% link_to("mailto:cha.maria.belen@gmail.com", class: "contact-icon", target: :blank) do %>
+          <i class="far fa-envelope card-icon email-link"></i>
+        <% end %>
+        <% link_to("Bel-CV.pdf", class: "contact-icon", target: :blank, title: "Download CV", download: "MariaBelenCha-CV") do %>
+          <i class="far fa-file-pdf card-icon"></i>
         <% end %>
       </div>
     </div>
 
-    <div class="card card-contact">
-      <!-- <h3>Contact Me</h3> -->
-      <% link_to("https://github.com/mbcha", class: "link", target: :blank) do %>
-      <i class="fab fa-github card-icon"></i>
-      <% end %>
-      <% link_to("https://www.linkedin.com/in/bella-cha-097385a0/", class: "link", target: :blank) do %>
-      <i class="fab fa-linkedin-in card-icon"></i>
-      <% end %>
-      <% link_to("mailto:EMAIL", class: "link", target: :blank) do %>
-      <i class="far fa-envelope card-icon email-link"></i>
-      <% end %>
-      <% link_to("CV-BellaCha.pdf", class: "link", target: :blank, title: "Download CV", download: "CV") do %>
-      <i class="far fa-file-pdf card-icon"></i>
-      <% end %>
+    <div class="inner-info-container right">
+      <div class="card card-projects">
+        <h2 class="underlined">Projects</h2>
+        <ul class="projects-list">
+          <li>
+            <h3>Salonized</h3>
+            <p>The main project I have worked in the past few years. It is a software to manage salons. I have worked on almost every aspect of the application.</p>
+          </li>
+          <li>
+            <h3>Timezone Converter</h3>
+            <p>Simple, user friendly tool to convert timezones as I have friends and family in different timezones. It became specially useful while traveling.</p>
+          </li>
+          <li>
+            <h3>I18next</h3>
+            <p>Gem that builds on top of the i18n library. It includes a backend that can be chained to support translations being loaded via HTTP.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+
+  <script src="javascripts/nameAnimation.js"></script>
 </div>
 
-<script src="javascripts/nameAnimation.js"></script>
