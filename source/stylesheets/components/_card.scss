@@ -1,0 +1,36 @@
+.card {
+  background: white;
+  margin: 20px;
+  padding: $padding;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+  &.card-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .contact-icon {
+      font-size: 30px;
+      padding: 0 $padding;
+    }
+  }
+
+  &.card-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &.card-projects {
+    height: -webkit-fill-available;
+  }
+
+  .underlined {
+    padding-bottom: $padding;
+    border-bottom: 1px solid $main-color;
+  }
+}
