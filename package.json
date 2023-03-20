@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "gsap": "npm:@gsap/member@^3.11.5"
-  }
-}
