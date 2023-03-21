@@ -15,8 +15,7 @@ a {
   color: #46DDD4; }
   a:focus, a:hover {
     text-decoration: none;
-    -webkit-filter: brightness(0.9);
-            filter: brightness(0.9); }
+    filter: brightness(0.9); }
 
 .main-container {
   width: 100vw;
@@ -65,8 +64,7 @@ a {
         .main-container .info-container .inner-info-container .image-wrapper img {
           width: 100%;
           height: 100%;
-          -o-object-fit: cover;
-             object-fit: cover;
+          object-fit: cover;
           overflow: hidden;
           border-radius: 50%; }
 
@@ -75,8 +73,7 @@ a {
   margin: 20px;
   padding: 15px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
   .card.card-contact {
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +95,5 @@ a {
     border-bottom: 1px solid #46DDD4; }
 
 .projects-list {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
   padding: 0 15px; }
