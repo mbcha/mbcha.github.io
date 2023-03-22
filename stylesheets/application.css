@@ -73,7 +73,7 @@ a {
   margin-top: 0;
   padding: 15px;
   border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 1px 2px 0px #d1d1cf; }
   .card.card-contact {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +91,23 @@ a {
   .card .underlined {
     padding-bottom: 15px;
     border-bottom: 1px solid #46DDD4; }
+
+.fixed-card {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  z-index: 2;
+  padding: 15px;
+  box-shadow: 0px 1px #d1d1cf;
+  margin-top: 20px; }
+
+.card-contact-bottom-layer {
+  width: 100vw;
+  background-color: #F8F9FA;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
 
 .projects-list {
   padding-inline-start: 0;
