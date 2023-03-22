@@ -1,7 +1,8 @@
 .card {
   background: white;
   margin: 20px;
-  padding: $spacing;
+  margin-top: 0;
+  padding: $padding;
   border-radius: 4px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 
@@ -11,13 +12,9 @@
     justify-content: space-around;
     align-items: center;
 
-    @media (min-width: 850px) {
-      width: calc(#{$profile-info-width} - 40px - #{$spacing} * 2);
-    }
-
     .contact-icon {
       font-size: 30px;
-      padding: 0 $spacing;
+      padding: 0 $padding;
     }
   }
 
@@ -30,7 +27,7 @@
   }
 
   .underlined {
-    padding-bottom: $spacing;
+    padding-bottom: $padding;
     border-bottom: 1px solid $main-color;
   }
 }

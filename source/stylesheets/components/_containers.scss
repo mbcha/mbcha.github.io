@@ -34,8 +34,8 @@
 			&.right {
         @media (min-width: 850px) {
           position: relative;
-          right: -$spacing;
-          margin-right: $spacing * 2;
+          right: -$padding;
+          margin-right: $margin;
           width: 100vw - $profile-info-width;
 				}
 
@@ -56,12 +56,12 @@
         .fixed-container {
           @media (min-width: 850px) {
             position: fixed;
-            left: $spacing;
+            left: $padding;
           }
 
-          &.card {
+          .card {
             @media (min-width: 850px) {
-              width: calc(#{$profile-info-width} - 40px - #{$spacing} * 2);
+              width: calc(#{$profile-info-width} - #{$margin} * 2 - #{$padding} * 2);
             }
           }
         }
