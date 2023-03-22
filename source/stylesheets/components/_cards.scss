@@ -4,7 +4,7 @@
   margin-top: 0;
   padding: $padding;
   border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px 0px $box-shadow-color;
 
   &.card-contact {
     display: flex;
@@ -30,4 +30,23 @@
     padding-bottom: $padding;
     border-bottom: 1px solid $main-color;
   }
+}
+
+.fixed-card {
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  z-index: 2;
+  padding: $padding;
+  box-shadow: 0px 1px $box-shadow-color;
+  margin-top: $margin;
+}
+
+.card-contact-bottom-layer {
+  width: 100vw;
+  background-color: $background-color;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
