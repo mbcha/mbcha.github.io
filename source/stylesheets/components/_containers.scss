@@ -35,7 +35,7 @@
         @media (min-width: 850px) {
           position: relative;
           right: -$padding;
-          margin-right: $margin;
+          margin-right: calc(#{$margin} + (#{$padding} / 2));
           width: 100vw - $profile-info-width;
 				}
 
