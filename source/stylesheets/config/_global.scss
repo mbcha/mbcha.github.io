@@ -12,6 +12,8 @@ h1, h2 {
 
 p {
   letter-spacing: 1px;
+  margin-block-start: $spacing / 2;
+  margin-block-end: $spacing / 2;
 }
 
 a {

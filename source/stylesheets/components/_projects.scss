@@ -1,4 +1,13 @@
 .projects-list {
   padding-inline-start: 0;
-  padding: 0 $padding;
+  padding: 0 $spacing;
+
+  .project-header {
+    display: flex;
+    align-items: center;
+
+    .link-icon {
+      margin-left: $spacing;
+    }
+  }
 }
