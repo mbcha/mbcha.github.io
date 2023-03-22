@@ -10,44 +10,61 @@
     width: 80vw;
     text-align: center;
 
-    @media screen and (max-width: 600px) {
+    @media (max-width: 850px) {
       width: 100vw;
     }
   }
 
   .info-container {
-    height: -webkit-fill-available;
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
 
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
-    }
-
-    @media screen and (min-width: 600px) {
+    @media (min-width: 850px) {
       flex-direction: row;
     }
 
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+
     .inner-info-container {
-			height: inherit;
+      height: inherit;
 
 			&.right {
-        max-width: 60%;
+        @media (min-width: 850px) {
+          position: relative;
+          right: -$spacing;
+          margin-right: $spacing * 2;
+          width: 100vw - $profile-info-width;
+				}
 
-        @media screen and (max-width: 600px) {
-          max-width: 100%;
+        @media (max-width: 850px) {
+          width: 100%;
         }
 			}
 
 			&.left {
-        display: flex;
-        flex-flow: column;
+        @media (min-width: 850px) {
+          width: $profile-info-width;
+				}
 
-        @media screen and (max-width: 600px) {
+        @media (max-width: 850px) {
           width: 100%;
 				}
+
+        .fixed-container {
+          @media (min-width: 850px) {
+            position: fixed;
+            left: $spacing;
+          }
+
+          &.card {
+            @media (min-width: 850px) {
+              width: calc(#{$profile-info-width} - 40px - #{$spacing} * 2);
+            }
+          }
+        }
 			}
     }
   }

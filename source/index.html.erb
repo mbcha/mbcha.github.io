@@ -5,31 +5,33 @@
 
   <div class="info-container">
     <div class="inner-info-container left">
-      <div class="card card-profile">
-        <div class="image-wrapper">
-          <%= image_tag("yo.jpg") %>
+      <div class="fixed-container">
+        <div class="card card-profile">
+          <div class="image-wrapper">
+            <%= image_tag("yo.jpg") %>
+          </div>
+          <h2>Full Stack Software Engineer</h2>
+          <p>
+            <b><%= Time.now.year - 2019 %>+</b> years of experience
+          <br>
+            Working mainly with <b>Ruby</b> and <b>JavaScript</b>
+          </p>
         </div>
-        <h2>Full Stack Software Engineer</h2>
-        <p>
-          <b><%= Time.now.year - 2019 %>+</b> years of experience
-        <br>
-          Working mainly with <b>Ruby</b> and <b>JavaScript</b>
-        </p>
-      </div>
 
-      <div class="card card-contact">
-        <% link_to("https://github.com/mbcha", class: "contact-icon", target: :blank) do %>
-          <i class="fab fa-github card-icon"></i>
-        <% end %>
-        <% link_to("https://www.linkedin.com/in/mbcha/", class: "contact-icon", target: :blank) do %>
-          <i class="fab fa-linkedin-in card-icon"></i>
-        <% end %>
-        <% link_to("mailto:cha.maria.belen@gmail.com", class: "contact-icon", target: :blank) do %>
-          <i class="far fa-envelope card-icon email-link"></i>
-        <% end %>
-        <% link_to("Bel-CV.pdf", class: "contact-icon", target: :blank, title: "Download CV", download: "MariaBelenCha-CV") do %>
-          <i class="far fa-file-pdf card-icon"></i>
-        <% end %>
+        <div class="card card-contact">
+          <% link_to("https://github.com/mbcha", class: "contact-icon", target: :blank) do %>
+            <i class="fab fa-github card-icon"></i>
+          <% end %>
+          <% link_to("https://www.linkedin.com/in/mbcha/", class: "contact-icon", target: :blank) do %>
+            <i class="fab fa-linkedin-in card-icon"></i>
+          <% end %>
+          <% link_to("mailto:cha.maria.belen@gmail.com", class: "contact-icon", target: :blank) do %>
+            <i class="far fa-envelope card-icon email-link"></i>
+          <% end %>
+          <% link_to("Bel-CV.pdf", class: "contact-icon", target: :blank, title: "Download CV", download: "MariaBelenCha-CV") do %>
+            <i class="far fa-file-pdf card-icon"></i>
+          <% end %>
+        </div>
       </div>
     </div>
 
@@ -70,4 +72,3 @@
     </div>
   </div>
 </div>
-

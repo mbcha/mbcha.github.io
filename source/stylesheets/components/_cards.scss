@@ -11,6 +11,10 @@
     justify-content: space-around;
     align-items: center;
 
+    @media (min-width: 850px) {
+      width: calc(#{$profile-info-width} - 40px - #{$spacing} * 2);
+    }
+
     .contact-icon {
       font-size: 30px;
       padding: 0 $spacing;
@@ -23,10 +27,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  &.card-projects {
-    height: -webkit-fill-available;
   }
 
   .underlined {
